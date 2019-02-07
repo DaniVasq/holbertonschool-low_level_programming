@@ -1,0 +1,1 @@
+This respository contains different scripts for beginning C language. 
