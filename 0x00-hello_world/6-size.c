@@ -10,5 +10,10 @@ int main(void)
 	printf("%d\n",sizeof(long));
 	printf("%d\n",sizeof(long long));
 	printf("%d\n",sizeof(float));
-	return (0);
+
+	printf("%d\n",sizeof(char));
+	printf("%d\n",sizeof(int));
+	printf("%d\n",sizeof(long long));
+	printf("%d\n",sizeof(long));
+	return (0); 
 }
