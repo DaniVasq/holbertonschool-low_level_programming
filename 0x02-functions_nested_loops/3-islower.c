@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * main - check the code for Holberton School students.
+ * _islower - checks lowercase c.
  *@c: It's the variable and you can check if c is lowercase or not.
  *
  *
