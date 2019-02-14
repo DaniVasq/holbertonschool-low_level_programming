@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * jack_bauer - prints the first nine minutes of Jack Bauer's longest day.
+ * jack_bauer - prints the hours and minutes of Jack Bauer's longest day.
  *
  */
 void jack_bauer(void)
