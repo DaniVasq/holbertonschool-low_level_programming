@@ -1,5 +1,5 @@
 /**
- * int _isupper - check for uppercase letters.
+ * _isupper - check for uppercase letters.
  *@c: the character representing alphabet letters.
  *
  * Return: Always 0.
