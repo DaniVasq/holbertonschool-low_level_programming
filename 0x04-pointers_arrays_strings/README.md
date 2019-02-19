@@ -1,0 +1,1 @@
+In this section, I have created functions and programs to display how to use pointers, arrays, and strings. 
