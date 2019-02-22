@@ -17,15 +17,14 @@ char *_strncat(char *dest, char *src, int n)
 		{
 			i++;
 		}
-		dest[i + i2] = src[i2];
 		while (src[i2])
 		{
-			i2++;
 			if (i2 < n)
 			{
 				dest[i + i2] = src[i2];
 			}
+			i2++;
 		}
-		dest[i2 + n] = '\0';
+		src[i2 + n] = '\0';
 		return (dest);
 }
