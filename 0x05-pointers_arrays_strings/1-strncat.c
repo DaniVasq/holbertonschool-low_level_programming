@@ -1,9 +1,10 @@
 #include "holberton.h"
 
 /**
- * char *_strncat - concatenates two strings until a certain point.
- * @:dest - destination
- * @:src - source
+ * *_strncat - concatenates two strings until a certain point.
+ *@dest: - destination
+ *@src: - source
+ *@n: - number of the position.
  *
  * Return: Always 0.
  */
@@ -16,15 +17,16 @@ char *_strncat(char *dest, char *src, int n)
 		{
 			i++;
 		}
+		dest[i + i2] = src[i2];
 		while (src[i2])
 		{
-			dest[i + i2] = src[i2];
-			if (n < 3 &&
+			i2++;
+			if (i2 < n)
 			{
-				src[i2 +n] = '\0';
+				dest[i + i2] = src[i2];
 			}
-			i++;
 		}
+		src[i2 + n] = '\0';
 		dest[i + i2] = src[i2];
 		return (dest);
 }
