@@ -10,9 +10,5 @@
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	int s1;
-	int s2;
-	int n;
-
 	return (NULL);
 }
