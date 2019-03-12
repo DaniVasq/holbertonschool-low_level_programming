@@ -2,8 +2,10 @@
 #define DOG_H
 
 /**
- * struct dog - new type dog
- *
+ * struct dog - doggy
+ *@name: name of doggo goodboy (Django)
+ *@owner: owner of doggo goodboy (Jay)
+ *@age: 3.5
  *
  */
 struct dog
