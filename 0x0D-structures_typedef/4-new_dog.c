@@ -3,30 +3,6 @@
 #include <stdlib.h>
 
 /**
- * *_strdup - pointer to allocated memeory
- *@str: str
- *@strdup: used to duplicate a string
- * Return: NULL is str
- */
-char *_strdup(char *str)
-{
-	int cont1;
-	int cont2 = 0;
-	char *s;
-
-if (str)
-return (NULL);
-while (str[cont2] != '\0')
-cont1++;
-s = malloc(sizeof(char) * (cont2 + 1));
-if (s)
-return (NULL);
-for (cont1 = 0; str[cont1] != '\0'; cont1++)
-s[cont1] = str[cont1];
-s[cont1] = '\0';
-return (s);
-}
-/**
  * *new_dog - creates a new doggo
  *@name: name of doggo
  *@age: age of doggo
