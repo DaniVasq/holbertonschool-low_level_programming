@@ -7,7 +7,7 @@
  *@name: name of doggo
  *@age: age of doggo
  *@owner: owner of doggo
- * Return: new dog
+ * Return: new_dog or NULL
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
@@ -20,6 +20,8 @@ dog_t *new_dog(char *name, float age, char *owner)
 	new_dog->owner = dogowner;
 	new_dog->age = age;
 	if (!new_dog)
-		return (NULL);
+	{
+	return (NULL);
+	}
 	return (new_dog);
 }
