@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-
 /**
  * int main - function of opcode
  *@argc: number of arguments
@@ -19,5 +18,5 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(2);
 	}
-	return(0);
+	return (0);
 	}
