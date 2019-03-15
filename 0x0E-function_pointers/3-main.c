@@ -1,0 +1,21 @@
+#include "3-calc.h"
+#include <stdio.h>
+#include <stdlib.h>
+
+/**
+ * main - entry point/the brain
+ *atoi: used to convert arguments to int
+ *@argv: argument array
+ *@argc: counter
+ * Return: 0
+ */
+int main(int argc, char *argv[])
+{
+	int res;
+	int (*x)(int, int);
+
+	x = get_op_func(argv[2]);
+	res = (*x)(atoi(argv[1]), atoi(argv[3]));
+	printf("%d  ________ %d\n", res, argc);
+	return (0);
+}
