@@ -32,7 +32,7 @@ void print_all(const char * const format, ...)
 			str = va_arg(args, char *);
 			if (!str)
 			{
-				printf("%s", str);
+				printf("%p", str);
 				break;
 			}
 			printf("%s", str);
