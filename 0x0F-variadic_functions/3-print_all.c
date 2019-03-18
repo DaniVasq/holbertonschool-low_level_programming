@@ -12,9 +12,10 @@ void print_all(const char * const format, ...)
 {
 	va_list args;
 	char *str;
-	unsigned int i = 0;
+	unsigned int i;
 
 	va_start(args, format);
+	i = 0;
 	while (format[i] && format != 0)
 	{
 		switch (format[i])
