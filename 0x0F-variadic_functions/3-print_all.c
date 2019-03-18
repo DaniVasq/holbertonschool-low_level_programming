@@ -25,24 +25,24 @@ void print_all(const char * const format, ...)
 		case 'i':
 			printf("%d", va_arg(args, int));
 			break;
+		case 'f':
+			printf("%f", va_arg(args, double));
+			break;
 		case 's':
-			str = va_arg(args, char*);
+			str = va_arg(args, char *);
 			if (!str)
 			{
-				printf("%p", str);
+				printf("%s", str);
 				break;
 			}
 			printf("%s", str);
-			break;
-		case 'f':
-			printf("%f", va_arg(args, double));
 			break;
 		default:
 			i++;
 			continue;
 	}
 		if (format[i + 1] != 0)
-			printf(",");
+			printf(", ");
 		i++;
 	}
 	va_end(args);
