@@ -6,16 +6,21 @@
 /**
  * print_list - prints all the elements of a list_t list.
  *
- * Return: .
+ *@h: head or starting pointer.
+ * Return: number of elements (i).
  */
 size_t print_list(const list_t *h)
 {
-	size_t numofelements = 0;
+	size_t i;
 
 	while (h != NULL)
 	{
+		i++;
+		if (h->str == NULL)
+			printf("[%d] %s\n", 0, "(nil)");
+		else
+			printf("[%d] %s\n", h->len, h->str);
 		h = h->next;
-		numofelements++;
 	}
-	return (numofelements);
+	return (i);
 }
