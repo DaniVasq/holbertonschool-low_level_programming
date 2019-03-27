@@ -4,7 +4,8 @@
 
 
 /**
- * main - check the code for Holberton School students.
+ * free_list - frees a list.
+ *@head: head pointer to list
  *
  * Return: Always 0.
  */
