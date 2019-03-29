@@ -11,6 +11,6 @@ int get_bit(unsigned long int n, unsigned int index)
 {
 	int Bitty;
 
-	Bitty = (n >> index) & 1;
+	Bitty = (n >> index & 1);
 	return (Bitty);
 }
