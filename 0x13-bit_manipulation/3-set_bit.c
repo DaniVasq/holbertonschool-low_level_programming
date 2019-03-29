@@ -8,7 +8,7 @@
  */
 int set_bit(unsigned long int *n, unsigned int index)
 {
-	while (n == NULL || index < 64)
+	while (n == NULL || index >= 64)
 		return (-1);
 			*n |= 1 << index;
 	return (1);
