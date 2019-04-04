@@ -11,7 +11,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	char *buffer;
 	long int i;
 	int filedes;
-	long int  amount;
+	long int amount;
 
 	if (filename == NULL)
 		return (0);
@@ -29,7 +29,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	buffer[letters] = '\0';
 
-	for (i = 0; buffer != '\0'; i++)
+	for (i = 0; buffer[i] != '\0'; i++)
 		;
 
 	amount = write(STDOUT_FILENO, buffer, i);
@@ -39,8 +39,6 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	if (close(filedes) < 0)
 		return (0);
-
 	free(buffer);
 	return (amount);
-
 }
