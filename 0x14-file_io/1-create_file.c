@@ -20,7 +20,7 @@ int create_file(const char *filename, char *text_content)
 	if (filedes < 0)
 		return (-1);
 
-	if (text_content != NULL)
+	if (text_content)
 	{
 		for (i = 0; text_content[i] != '\0'; i++)
 			;
@@ -31,5 +31,5 @@ int create_file(const char *filename, char *text_content)
 	}
 	if (close(filedes) < 0)
 		return (-1);
-	return (amount);
+	return (1);
 }
