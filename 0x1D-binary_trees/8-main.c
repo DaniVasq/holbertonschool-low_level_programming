@@ -33,16 +33,3 @@ int main(void)
     binary_tree_postorder(root, &print_num);
     return (0);
 }
-alex@/tmp/binary_trees$ gcc -Wall -Wextra -Werror -pedantic binary_tree_print.c 8-main.c 8-binary_tree_postorder.c 0-binary_tree_node.c -o 8-post
-alex@/tmp/binary_trees$ ./8-post
-       .-------(098)-------.
-  .--(012)--.         .--(402)--.
-(006)     (056)     (256)     (512)
-6
-56
-12
-256
-512
-402
-98
-alex@/tmp/binary_trees$

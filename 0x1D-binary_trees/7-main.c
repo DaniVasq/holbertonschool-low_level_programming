@@ -33,16 +33,3 @@ int main(void)
     binary_tree_inorder(root, &print_num);
     return (0);
 }
-alex@/tmp/binary_trees$ gcc -Wall -Wextra -Werror -pedantic binary_tree_print.c 7-main.c 7-binary_tree_inorder.c 0-binary_tree_node.c -o 7-in
-alex@/tmp/binary_trees$ ./7-in
-       .-------(098)-------.
-  .--(012)--.         .--(402)--.
-(006)     (056)     (256)     (512)
-6
-12
-56
-98
-256
-402
-512
-alex@/tmp/binary_trees$

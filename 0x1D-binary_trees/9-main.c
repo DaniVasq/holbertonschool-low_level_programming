@@ -27,12 +27,3 @@ int main(void)
     printf("Height from %d: %lu\n", root->left->right->n, height);
     return (0);
 }
-alex@/tmp/binary_trees$ gcc -Wall -Wextra -Werror -pedantic binary_tree_print.c 9-binary_tree_height.c 9-main.c 0-binary_tree_node.c 2-binary_tree_insert_right.c -o 9-height
-alex@/tmp/binary_trees$ ./9-height 
-  .-------(098)--.
-(012)--.       (128)--.
-     (054)          (402)
-Height from 98: 2
-Height from 128: 1
-Height from 54: 0
-alex@/tmp/binary_trees$

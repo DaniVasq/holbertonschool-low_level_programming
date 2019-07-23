@@ -33,16 +33,3 @@ int main(void)
     binary_tree_preorder(root, &print_num);
     return (0);
 }
-alex@/tmp/binary_trees$ gcc -Wall -Wextra -Werror -pedantic binary_tree_print.c 6-main.c 6-binary_tree_preorder.c 0-binary_tree_node.c -o 6-pre
-alex@/tmp/binary_trees$ ./6-pre
-       .-------(098)-------.
-  .--(012)--.         .--(402)--.
-(006)     (056)     (256)     (512)
-98
-12
-6
-56
-402
-256
-512
-alex@/tmp/binary_trees$
