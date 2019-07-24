@@ -27,12 +27,3 @@ int main(void)
     printf("Leaves in %d: %lu\n", root->left->right->n, leaves);
     return (0);
 }
-alex@/tmp/binary_trees$ gcc -Wall -Wextra -Werror -pedantic binary_tree_print.c 12-binary_tree_leaves.c 12-main.c 0-binary_tree_node.c 2-binary_tree_insert_right.c -o 12-leaves
-alex@/tmp/binary_trees$ ./12-leaves 
-  .-------(098)--.
-(012)--.       (128)--.
-     (054)          (402)
-Leaves in 98: 2
-Leaves in 128: 1
-Leaves in 54: 1
-alex@/tmp/binary_trees$

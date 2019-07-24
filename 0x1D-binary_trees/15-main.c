@@ -28,12 +28,3 @@ int main(void)
     printf("Is %d full: %d\n", root->right->n, full);
     return (0);
 }
-alex@/tmp/binary_trees$ gcc -Wall -Wextra -Werror -pedantic binary_tree_print.c 15-binary_tree_is_full.c 15-main.c 0-binary_tree_node.c 2-binary_tree_insert_right.c -o 15-full
-alex@/tmp/binary_trees$ ./15-full
-       .-------(098)--.
-  .--(012)--.       (128)--.
-(010)     (054)          (402)
-Is 98 full: 0
-Is 12 full: 1
-Is 128 full: 0
-alex@/tmp/binary_trees$

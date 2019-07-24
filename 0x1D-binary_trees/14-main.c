@@ -31,14 +31,3 @@ int main(void)
     printf("Balance of %d: %+d\n", root->left->left->right->n, balance);
     return (0);
 }
-alex@/tmp/binary_trees$ gcc -Wall -Wextra -Werror -pedantic binary_tree_print.c 14-binary_tree_balance.c 14-main.c 0-binary_tree_node.c 2-binary_tree_insert_right.c 1-binary_tree_insert_left.c -o 14-balance
-alex@/tmp/binary_trees$ ./14-balance
-                      .-------(098)--.
-            .-------(045)--.       (128)--.
-       .--(012)--.       (050)          (402)
-  .--(010)     (054)
-(008)
-Balance of 98: +2
-Balance of 128: -1
-Balance of 54: +0
-alex@/tmp/binary_trees$

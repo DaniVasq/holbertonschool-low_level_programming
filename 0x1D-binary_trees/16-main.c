@@ -35,22 +35,3 @@ int main(void)
     printf("Perfect: %d\n", perfect);
     return (0);
 }
-alex@/tmp/binary_trees$ gcc -Wall -Wextra -Werror -pedantic binary_tree_print.c 16-binary_tree_is_perfect.c 16-main.c 0-binary_tree_node.c 2-binary_tree_insert_right.c -o 16-perfect
-alex@/tmp/binary_trees$ ./16-perfect 
-       .-------(098)-------.
-  .--(012)--.         .--(128)--.
-(010)     (054)     (010)     (402)
-Perfect: 1
-
-       .-------(098)-------.
-  .--(012)--.         .--(128)-------.
-(010)     (054)     (010)       .--(402)
-                              (010)
-Perfect: 0
-
-       .-------(098)-------.
-  .--(012)--.         .--(128)-------.
-(010)     (054)     (010)       .--(402)--.
-                              (010)     (010)
-Perfect: 0
-alex@/tmp/binary_trees$

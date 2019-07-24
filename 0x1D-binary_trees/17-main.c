@@ -33,14 +33,3 @@ int main(void)
     printf("Sibling of %d: %p\n", root->n, (void *)sibling);
     return (0);
 }
-alex@/tmp/binary_trees$ gcc -Wall -Wextra -Werror -pedantic binary_tree_print.c 17-main.c 17-binary_tree_sibling.c 0-binary_tree_node.c -o 17-sibling
-alex@/tmp/binary_trees$ ./17-sibling
-       .-------(098)-------.
-  .--(012)--.         .--(128)-------.
-(010)     (054)     (110)       .--(402)--.
-                              (200)     (512)
-Sibling of 12: 128
-Sibling of 110: 402
-Sibling of 54: 10
-Sibling of 98: (nil)
-alex@/tmp/binary_trees$

@@ -31,13 +31,3 @@ int main(void)
     printf("Uncle of %d: %p\n", root->left->n, (void *)uncle);
     return (0);
 }
-alex@/tmp/binary_trees$ gcc -Wall -Wextra -Werror -pedantic binary_tree_print.c 18-main.c 18-binary_tree_uncle.c 0-binary_tree_node.c -o 18-uncle
-alex@/tmp/binary_trees$ ./18-uncle
-       .-------(098)-------.
-  .--(012)--.         .--(128)-------.
-(010)     (054)     (110)       .--(402)--.
-                              (200)     (512)
-Uncle of 110: 12
-Uncle of 54: 128
-Uncle of 12: (nil)
-alex@/tmp/binary_trees$
