@@ -1,7 +1,7 @@
 #include "binary_trees.h"
 
 /**
- * node_is_complete: checks if a binary tree is complete
+ * node_is_complete - checks if a binary tree is complete
  * @node: node to evaluate
  * Return: 1 if its complete 0 if not
  */
