@@ -1,13 +1,13 @@
 #include "binary_trees.h"
 
 /**
- * node_is_complete -checks if a binary tree is complete
+ * node_is_complete: checks if a binary tree is complete
  * @node: node to evaluate
  * Return: 1 if its complete 0 if not
  */
 int node_is_complete(const binary_tree_t *node)
 {
-	if (node && node->left && node->right)
+	if ((node && node->left && node->right))
 	{
 		return (1);
 	}
@@ -72,15 +72,14 @@ int check_left_level(const binary_tree_t *tree, int level, int *flag)
 	{
 		if (level == 1)
 		{
-
+			if (*flag && tree->right == NULL)
+				*flag = 0;
+			if (*flag == 1 && tree->right == NULL && tree->left == NULL)
+				return (1);
 			if (tree->left == NULL && *flag)
 				return (0);
 			if (*flag == 0 && (tree->right || tree->left))
 				return (0);
-			if (*flag && tree->right == NULL)
-			{
-				*flag = 0;
-			}
 			return (1);
 		}
 		else
@@ -94,7 +93,6 @@ int check_left_level(const binary_tree_t *tree, int level, int *flag)
 	}
 	return (0);
 }
-
 /**
  * binary_tree_is_complete -checks if a binary tree is complete
  * @tree: tree to evaluate if is complete
@@ -112,6 +110,8 @@ int binary_tree_is_complete(const binary_tree_t *tree)
 			aux = check_complete_level(tree, level);
 			level++;
 		}
+		if (t == 0)
+			return (1);
 		if (aux)
 			return (check_left_level(tree, t, &aux));
 	}
