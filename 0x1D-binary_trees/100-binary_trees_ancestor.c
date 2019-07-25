@@ -28,7 +28,7 @@ binary_tree_t *binary_trees_ancestor(const binary_tree_t *first,
 	height_s = binary_tree_depth(second);
 	if (height_f && height_s)
 	{
-		if (height_f > height_s)
+		if (height_f >= height_s)
 		{
 			aux = first;
 			first = second;
