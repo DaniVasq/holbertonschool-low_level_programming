@@ -1,0 +1,15 @@
+#include "holberton.h"
+
+/**
+ * get_bit - returns value of a bit at a given index
+ *@n: integer
+ *@index: the index
+ * Return: Always 0.
+ */
+int get_bit(unsigned long int n, unsigned int index)
+{
+	int Bitty;
+
+	Bit = (n >> index) & 1;
+	return (Bitty);
+}

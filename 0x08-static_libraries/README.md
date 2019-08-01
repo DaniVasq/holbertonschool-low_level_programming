@@ -1,1 +1,1 @@
-0x08. C - Static Libraries
+0x08 - task 0-2: creating static libraries in C

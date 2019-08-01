@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include "dog.h"
+
+/**
+ * free_dog - frees the doggos!
+ *@d: pointer/struct to free
+ *@owner: owner of doggo
+ *@name: name of doggo
+ *
+ */
+void free_dog(dog_t *d)
+{
+	if (d)
+	{
+		free(d->owner);
+		free(d->name);
+		free(d);
+	}
+}
