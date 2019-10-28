@@ -31,7 +31,7 @@ void shell_sort(int *array, size_t size)
 		gap *= 3 + 1;
 	for (; gap >= 1; gap = gap / 3)
 	{
-		for (i = gap; i < size; i++)
+		for (i = gap; i < size; ++i)
 		{
 			for (j = i; j >= gap && array[j - gap] > array[j]; j -= gap)
 				swap_bubble(array + j, array + (j - gap));
