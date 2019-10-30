@@ -64,12 +64,10 @@ int partition_hoare(int *array, size_t size, int low, int high)
 	{
 		do {
 			high1++;
-		}
-		while (array[high1] < pivot)
-		do		{
+		} while (array[high1] < pivot);
+		do {
 			low1--;
-		}
-		while (array[low1] > pivot)
+		} while (array[low1] > pivot);
 
 		if (high1 < low1)
 		{
