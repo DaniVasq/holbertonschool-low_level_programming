@@ -40,13 +40,13 @@ void swap_tail(listint_t **list, listint_t **head, listint_t **tail)
  */
 void swap_head(listint_t **list, listint_t **tail, listint_t **head)
 {
-	listint_t *temp = (*head)->next;
+	listint_t *temp = (*head)->prev;
 
-	if ((*head)->next != NULL)
+	if ((*head)->prev != NULL)
 		(*head)->next->prev = temp;
 	else
 		*tail = temp;
-	temp->next = (*tail)->next;
+	temp->next = (*head)->next;
 	(*head)->prev = temp->prev;
 	if (temp->prev != NULL)
 	{
@@ -70,11 +70,15 @@ void cocktail_sort_list(listint_t **list)
 	listint_t *head;
 	listint_t *tail;
 
+	if (list == NULL || *list == NULL || (*list)->next == NULL)
+		return;
 	for (tail = *list; tail->next != NULL;)
-		tail = tail->next;
-
-	for (; booln == false; booln = true)
 	{
+		tail = tail->next;
+	}
+	while (booln == false)
+	{
+		booln = true;
 		for (head = *list; head != tail; head = head->next)
 		{
 			if (head->n > head->next->n)
